@@ -35,7 +35,7 @@ server <- function(input, output, session) {
 
     plot <- ggplot(data, aes(x = x, y = donation_censored())) +
       geom_point() +
-      labs(title = "Regression with Censoring from below/corner solutions",
+      labs(title = "Regression with Censoring from below",
            x = "X",
            y = "Y(censored)") +
       theme_minimal() +
