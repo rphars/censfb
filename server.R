@@ -37,7 +37,7 @@ server <- function(input, output, session) {
       geom_point() +
       labs(title = "Regression with Censoring from below/corner solutions",
            x = "X",
-           y = "Donation Amount") +
+           y = "Y(censored)") +
       theme_minimal() +
       coord_cartesian(ylim = range(donation_amount()))
 
